@@ -20,14 +20,45 @@
                     <div class="w-[170px] h-[4px] bg-[#ff725e] rounded-[10px]"></div>
                 </div>
 
-                <div class="w-full flex flex-col pt-[20px]">
+                <div class="w-full flex flex-col pt-[20px] gap-[25px]">
                     <div class="w-full flex flex-col">
                         <label for="peso" class="font-bold text-[18px] text-[#cbd4e2]">Peso em kg</label>
                         <div class="relative w-full">
-                            <input type="text" class="w-full bg-[#3f3f47] h-[45px] rounded-[5px] pl-[45px]">
+                            <input type="number" min="0" max="900" class="w-full bg-[#3f3f47] h-[45px] rounded-[5px] pl-[45px] 
+                            pr-[45px] outline-none focus:border focus:border-[#ff725e]">
                             <i class="fa-solid fa-weight-hanging text-[#cbd4e2] absolute left-[15px] top-[15px] text-[20px]"></i>
-                            
+                            <p class="text-[#cbd4e2] absolute right-[15px] top-[12px]">kg</p>
                         </div>
+                    </div>
+
+                    <div class="w-full flex flex-col">
+                        <label for="altura" class="font-bold text-[18px] text-[#cbd4e2]">Altura em cm</label>
+                        <div class="relative w-full">
+                            <input type="number" min="0" max="250" class="w-full bg-[#3f3f47] h-[45px] rounded-[5px] pl-[45px] 
+                            pr-[45px] outline-none focus:border focus:border-[#ff725e]">
+                            <i class="fa-solid fa-ruler text-[#cbd4e2] absolute left-[15px] top-[15px] text-[20px]"></i>
+                            <p class="text-[#cbd4e2] absolute right-[15px] top-[12px]">cm</p>
+                        </div>
+                    </div>
+
+                    <button class="w-full bg-[#ff725e] h-[45px] rounded-[5px] font-bold text-[18px] hover:bg-transparent 
+                    hover:text-[#ff725e] border-1 border-[#ff725e] cursor-pointer transition-all duration-300 ease-in-out">CALCULAR</button>                 
+
+                    <div class="flex flex-col gap-[10px]" id="resultado">
+                        <div class="w-full h-[2px] bg-[#3f3f47]"></div>
+
+                        <div class="w-full flex">
+                            <div class="w-[30%] h-[100px] flex items-center justify-center flex-col">
+                                <span class="text-[#ff725e] text-[40px]">28.1</span>
+                                <p>Seu IMC</p>
+                            </div>
+
+                            <div class="w-[70%] h-[100px] flex items-center justify-center">
+                                <span class="text-[18px] text-center">Você está no peso ideal!</span>
+                            </div>
+                        </div>
+
+                        <div class="w-full h-[2px] bg-[#3f3f47]"></div>
                     </div>
                 </div>
             </div>
