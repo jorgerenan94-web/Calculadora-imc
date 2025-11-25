@@ -56,7 +56,7 @@ Este projeto foi criado para fins **educacionais**, aplicando:
 
 1. Clone ou baixe o repositório
 ````
-git clone https://github.com/seu-usuario/calculadora-imc.git
+git clone https://github.com/jorgerenan94-web/calculadora-imc.git
 ````
 2. Acesse a pasta
 ````
